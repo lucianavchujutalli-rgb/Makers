@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAKERS · Encuentra el talento que tu proyecto necesita</title>
+  <meta name="description" content="Descubre profesionales creativos, conoce su trabajo y conecta con el talento que hará realidad tus ideas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="MAKERS, ir al inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#2fc4b8"/><path d="M9 22 L14 8 L18 17 L22 8 L23 22" fill="none" stroke="#17181c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        MAKERS
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Inicio</a></li>
+          <li><a class="nav__link" href="servicios.html">Servicios</a></li>
+          <li><a class="nav__link" href="proyectos.html">Proyectos</a></li>
+          <li><a class="nav__link" href="oportunidades.html">Oportunidades</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--ghost" href="#">Registrarse</a>
+          <a class="btn btn--primary" href="#">Iniciar sesión</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">CREATIVIDAD QUE IMPULSA NEGOCIOS</p>
+          <h1 class="hero__title" id="hero-title">Encuentra <span class="text-magenta">el talento</span> <span class="text-blue">que tu proyecto necesita.</span></h1>
+          <p class="hero__text">Descubre profesionales creativos, conoce su trabajo y conecta con el talento que hará realidad tus ideas.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="servicios.html">Explorar servicios</a>
+            <a class="btn btn--outline" href="proyectos.html">Publicar proyecto</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img src="https://picsum.photos/seed/makers-hero/700/560" alt="Profesional creativa trabajando en su laptop">
+          <figcaption class="hero__badge">+1.200 proyectos publicados</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <h2 class="section__title" id="cat-title">Explorar por categoría</h2>
+        <ul class="categories">
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-ilustracion/200/200" alt="">Ilustración</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-fotografia/200/200" alt="">Fotografía</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-web/200/200" alt="">Diseño Web</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-video/200/200" alt="">Edición / Video</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-marketing/200/200" alt="">Marketing Digital</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-copy/200/200" alt="">Copywriting / Storytelling</a></li>
+          <li><a class="category" href="servicios.html"><img src="https://picsum.photos/seed/cat-branding/200/200" alt="">Branding</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROFESIONALES DESTACADOS -->
+    <section class="section section--tint" aria-labelledby="pro-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="pro-title">Profesionales destacados</h2>
+          <a class="btn btn--outline" href="servicios.html">Ver todos</a>
+        </div>
+        <div class="grid grid--4">
+          <article class="pro-card">
+            <a class="pro-card__media" href="proyecto.html"><img src="https://picsum.photos/seed/pro-valentina/400/300" alt="Trabajo de Valentina Rojas" loading="lazy"></a>
+            <div class="pro-card__body">
+              <div class="pro-card__top"><h3 class="pro-card__name">Valentina Rojas</h3><span class="rating">4.29 (32)</span></div>
+              <p class="pro-card__role">Diseñadora gráfica · Lima</p>
+              <div class="pro-card__tags"><span class="chip chip--ok">Disponible</span><span class="chip">Branding</span></div>
+              <p class="pro-card__price"><small>Desde</small> S/ 550</p>
+            </div>
+          </article>
+          <article class="pro-card">
+            <a class="pro-card__media" href="proyecto.html"><img src="https://picsum.photos/seed/pro-diego/400/300" alt="Trabajo de Diego Morales" loading="lazy"></a>
+            <div class="pro-card__body">
+              <div class="pro-card__top"><h3 class="pro-card__name">Diego Morales</h3><span class="rating">4.99 (39)</span></div>
+              <p class="pro-card__role">Marketing digital · Arequipa</p>
+              <div class="pro-card__tags"><span class="chip chip--ok">Disponible</span><span class="chip">Diseño gráfico</span><span class="chip">Marketing digital</span></div>
+              <p class="pro-card__price"><small>Desde</small> S/ 850</p>
+            </div>
+          </article>
+          <article class="pro-card">
+            <a class="pro-card__media" href="proyecto.html"><img src="https://picsum.photos/seed/pro-camila/400/300" alt="Trabajo de Camila Salazar" loading="lazy"></a>
+            <div class="pro-card__body">
+              <div class="pro-card__top"><h3 class="pro-card__name">Camila Salazar</h3><span class="rating">5.00 (15)</span></div>
+              <p class="pro-card__role">Fotógrafa · Lima</p>
+              <div class="pro-card__tags"><span class="chip">Fotografía</span></div>
+              <p class="pro-card__price"><small>Desde</small> S/ 350</p>
+            </div>
+          </article>
+          <article class="pro-card">
+            <a class="pro-card__media" href="proyecto.html"><img src="https://picsum.photos/seed/pro-lucia/400/300" alt="Trabajo de Lucía Gómez" loading="lazy"></a>
+            <div class="pro-card__body">
+              <div class="pro-card__top"><h3 class="pro-card__name">Lucía Gómez</h3><span class="rating">4.86 (42)</span></div>
+              <p class="pro-card__role">Editora · Trujillo</p>
+              <div class="pro-card__tags"><span class="chip chip--ok">Disponible</span><span class="chip">Edición</span></div>
+              <p class="pro-card__price"><small>Desde</small> S/ 760</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿CÓMO FUNCIONA? -->
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="section__title" id="how-title">¿Cómo funciona?</h2>
+        <ol class="grid grid--3 steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3 class="step__title">Busca o publica</h3>
+            <p class="step__text">Explora servicios o publica tu proyecto en minutos.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3 class="step__title">Conecta y trabaja</h3>
+            <p class="step__text">Elige el mejor talento o cliente según tus necesidades.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3 class="step__title">Recibe y crece</h3>
+            <p class="step__text">Recibe tu proyecto, califica y sigue haciendo crecer tu marca.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="section" aria-labelledby="cta-title" style="padding-top:0">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__inner">
+            <div>
+              <h2 class="cta__title" id="cta-title">Tu próxima gran idea <span>empieza aquí.</span></h2>
+              <p class="cta__intro">MAKERS lo hace realidad. Ya sea que busques servicios o quieras ofrecer tu talento.</p>
+            </div>
+            <div class="cta__roles">
+              <article class="role-card">
+                <img src="https://picsum.photos/seed/role-cliente/400/300" alt="" loading="lazy">
+                <h3 class="role-card__title">Soy cliente</h3>
+                <p>Necesito un servicio creativo para mi negocio.</p>
+                <a class="btn btn--dark" href="servicios.html">Ver servicios</a>
+              </article>
+              <article class="role-card">
+                <img src="https://picsum.photos/seed/role-freelance/400/300" alt="" loading="lazy">
+                <h3 class="role-card__title">Soy freelance</h3>
+                <p>Quiero ofrecer mis servicios y conseguir nuevos proyectos.</p>
+                <a class="btn btn--dark" href="oportunidades.html">Ver oportunidades</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__claim">Donde las ideas encuentran a las personas capaces de hacerlo realidad.</p>
+      <div class="footer__actions">
+        <a class="btn btn--primary" href="servicios.html">Explorar talento</a>
+        <a class="btn btn--light" href="#">Crear mi perfil</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 MAKERS. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

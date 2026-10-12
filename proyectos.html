@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos · MAKERS</title>
+  <meta name="description" content="Ideas creativas que inspiran y conectan. Explora proyectos de diseño, fotografía, marketing y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="MAKERS, ir al inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#2fc4b8"/><path d="M9 22 L14 8 L18 17 L22 8 L23 22" fill="none" stroke="#17181c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        MAKERS
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="servicios.html">Servicios</a></li>
+          <li><a class="nav__link" href="proyectos.html" aria-current="page">Proyectos</a></li>
+          <li><a class="nav__link" href="oportunidades.html">Oportunidades</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--ghost" href="#">Registrarse</a>
+          <a class="btn btn--primary" href="#">Iniciar sesión</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="proy-title">
+      <div class="container page-hero__inner">
+        <h1 class="page-hero__title page-hero__title--sentence" id="proy-title">Ideas creativas que <span class="text-magenta">inspiran</span> y <span class="text-blue">conectan</span></h1>
+        <div class="page-hero__collage" aria-hidden="true">
+          <img src="https://picsum.photos/seed/proy-h1/240/320" alt="">
+          <img src="https://picsum.photos/seed/proy-h2/240/320" alt="">
+          <img src="https://picsum.photos/seed/proy-h3/240/320" alt="">
+          <img src="https://picsum.photos/seed/proy-h4/240/320" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Listado de proyectos">
+      <div class="container">
+
+        <!-- Barra de filtros: la lógica está en js/main.js -->
+        <div class="toolbar">
+          <details class="filters">
+            <summary class="btn btn--primary">Filtros</summary>
+            <div class="filters__panel" id="filter-panel">
+              <button class="tab-chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+              <button class="tab-chip" type="button" data-filter="Branding" aria-pressed="false">Branding</button>
+              <button class="tab-chip" type="button" data-filter="Diseño Gráfico" aria-pressed="false">Diseño Gráfico</button>
+              <button class="tab-chip" type="button" data-filter="Fotografía" aria-pressed="false">Fotografía</button>
+              <button class="tab-chip" type="button" data-filter="Edición" aria-pressed="false">Edición</button>
+              <button class="tab-chip" type="button" data-filter="Marketing Digital" aria-pressed="false">Marketing Digital</button>
+              <button class="tab-chip" type="button" data-filter="Diseño Web" aria-pressed="false">Diseño Web</button>
+              <button class="tab-chip" type="button" data-filter="Ilustración" aria-pressed="false">Ilustración</button>
+            </div>
+          </details>
+          <div class="tabs-inline" role="group" aria-label="Ordenar proyectos" id="sort-tabs">
+            <button class="tab-chip" type="button" aria-pressed="true">Más recientes</button>
+            <button class="tab-chip" type="button" aria-pressed="false">Para ti</button>
+            <button class="tab-chip" type="button" aria-pressed="false">Tendencias</button>
+            <button class="tab-chip" type="button" aria-pressed="false">Destacados</button>
+          </div>
+        </div>
+
+        <div class="masonry" id="project-list">
+
+          <article class="project-card" data-category="Branding">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p01/400/480" alt="Marca de cosméticos para mujeres" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Marca de cosméticos para mujeres</h2>
+              <div class="project-card__meta"><span class="chip">Branding</span><span class="project-card__stats"><span>♥ 500</span><span>👁 2k</span></span></div>
+              <p class="project-card__meta">Carlos Torres</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Marketing Digital">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p02/400/300" alt="Gestión de redes sociales" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Gestión de redes sociales para emprendimiento de accesorios</h2>
+              <div class="project-card__meta"><span class="chip">Marketing Digital</span><span class="project-card__stats"><span>♥ 425</span><span>👁 1.5k</span></span></div>
+              <p class="project-card__meta">Diego Morales</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Fotografía">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p03/400/420" alt="Sesión fotográfica para tienda online" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Sesión fotográfica para tienda online</h2>
+              <div class="project-card__meta"><span class="chip">Fotografía</span><span class="project-card__stats"><span>♥ 350</span><span>👁 2k</span></span></div>
+              <p class="project-card__meta">Camila Salazar</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Diseño Web">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p04/400/300" alt="Diseño y desarrollo de página web" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Diseño y desarrollo de página web</h2>
+              <div class="project-card__meta"><span class="chip">Diseño Web</span><span class="project-card__stats"><span>♥ 850</span><span>👁 5k</span></span></div>
+              <p class="project-card__meta">Andrés Flores</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Edición">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p05/400/360" alt="Edición de videos promocionales" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Edición de videos promocionales para redes sociales</h2>
+              <div class="project-card__meta"><span class="chip">Edición</span><span class="project-card__stats"><span>♥ 421</span><span>👁 3.2k</span></span></div>
+              <p class="project-card__meta">Lucía Gómez</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Diseño Gráfico">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p06/400/500" alt="Identidad de marca para cafetería artesanal" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Diseño de identidad de marca para cafetería artesanal</h2>
+              <div class="project-card__meta"><span class="chip">Diseño Gráfico</span><span class="project-card__stats"><span>♥ 115</span><span>👁 962</span></span></div>
+              <p class="project-card__meta">Valentina Rojas</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Ilustración">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p07/400/340" alt="Ilustraciones personalizadas" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Ilustraciones personalizadas para marca de ropa</h2>
+              <div class="project-card__meta"><span class="chip">Ilustración</span><span class="project-card__stats"><span>♥ 150</span><span>👁 2k</span></span></div>
+              <p class="project-card__meta">José Ramírez</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Diseño Gráfico">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p08/400/300" alt="Piezas gráficas para lanzamiento" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Piezas gráficas para lanzamiento de producto</h2>
+              <div class="project-card__meta"><span class="chip">Diseño Gráfico</span><span class="project-card__stats"><span>♥ 260</span><span>👁 3k</span></span></div>
+              <p class="project-card__meta">Mariana López</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Fotografía">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p09/400/520" alt="Fotografía de paisajes" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Fotografía de paisajes para campaña turística</h2>
+              <div class="project-card__meta"><span class="chip">Fotografía</span><span class="project-card__stats"><span>♥ 842</span><span>👁 2.1k</span></span></div>
+              <p class="project-card__meta">Sofía Medina</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Diseño Gráfico">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p10/400/320" alt="Piezas para redes de restaurante" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Diseño de piezas para redes sociales de restaurante</h2>
+              <div class="project-card__meta"><span class="chip">Diseño Gráfico</span><span class="project-card__stats"><span>♥ 1.5k</span><span>👁 5k</span></span></div>
+              <p class="project-card__meta">Diego Mendoza</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Diseño Web">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p11/400/440" alt="App móvil para eventos" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Diseño de app móvil para gestión de eventos</h2>
+              <div class="project-card__meta"><span class="chip">Diseño Web</span><span class="project-card__stats"><span>♥ 1k</span><span>👁 8k</span></span></div>
+              <p class="project-card__meta">Fernanda Castillo</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Ilustración">
+            <a href="proyecto.html"><img src="https://picsum.photos/seed/p12/400/300" alt="Ilustración editorial" loading="lazy"></a>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Ilustración editorial para campaña motivacional</h2>
+              <div class="project-card__meta"><span class="chip">Ilustración</span><span class="project-card__stats"><span>♥ 712</span><span>👁 9k</span></span></div>
+              <p class="project-card__meta">Daniela Paredes</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p id="empty-msg" class="page-lead" hidden>No hay proyectos en esta categoría. Prueba con otra.</p>
+
+        <nav class="pagination" aria-label="Paginación">
+          <a href="#" aria-label="Página anterior">«</a>
+          <a href="#" aria-current="page">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#" aria-label="Página siguiente">»</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__claim">Donde las ideas encuentran a las personas capaces de hacerlo realidad.</p>
+      <div class="footer__actions">
+        <a class="btn btn--primary" href="servicios.html">Explorar talento</a>
+        <a class="btn btn--light" href="#">Crear mi perfil</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 MAKERS. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Identidad de marca para cafetería artesanal · MAKERS</title>
+  <meta name="description" content="Diseño de identidad visual completa para cafetería artesanal con enfoque natural, moderno y acogedor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="MAKERS, ir al inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#2fc4b8"/><path d="M9 22 L14 8 L18 17 L22 8 L23 22" fill="none" stroke="#17181c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        MAKERS
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="servicios.html">Servicios</a></li>
+          <li><a class="nav__link" href="proyectos.html" aria-current="page">Proyectos</a></li>
+          <li><a class="nav__link" href="oportunidades.html">Oportunidades</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--ghost" href="#">Registrarse</a>
+          <a class="btn btn--primary" href="#">Iniciar sesión</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="breadcrumb"><a href="proyectos.html">‹ Volver a proyectos</a></p>
+
+    <div class="detail">
+
+      <!-- Columna principal -->
+      <article>
+        <header>
+          <span class="chip chip--pink">Diseño Gráfico</span>
+          <h1 class="detail__title">Identidad de marca para cafetería artesanal</h1>
+          <p class="detail__lead">Diseño de identidad visual completa para cafetería artesanal con enfoque en lo natural, moderno y acogedor.</p>
+          <p class="detail__meta">
+            <span>Publicado hace 3 semanas</span>
+            <span>♥ 850 me gusta</span>
+            <span>👁 5k vistas</span>
+          </p>
+        </header>
+
+        <!-- Galería: miniaturas cambian la imagen principal -->
+        <figure class="gallery">
+          <div class="gallery__main">
+            <img id="gallery-main" src="https://picsum.photos/seed/bruma-1/960/600" alt="Vista principal de la identidad de BRUMA">
+          </div>
+          <div class="gallery__thumbs">
+            <button type="button" aria-current="true" data-full="https://picsum.photos/seed/bruma-1/960/600"><img src="https://picsum.photos/seed/bruma-1/200/150" alt="Imagen 1"></button>
+            <button type="button" data-full="https://picsum.photos/seed/bruma-2/960/600"><img src="https://picsum.photos/seed/bruma-2/200/150" alt="Imagen 2"></button>
+            <button type="button" data-full="https://picsum.photos/seed/bruma-3/960/600"><img src="https://picsum.photos/seed/bruma-3/200/150" alt="Imagen 3"></button>
+            <button type="button" data-full="https://picsum.photos/seed/bruma-4/960/600"><img src="https://picsum.photos/seed/bruma-4/200/150" alt="Imagen 4"></button>
+          </div>
+        </figure>
+
+        <!-- Pestañas -->
+        <section class="tabs" aria-label="Información del proyecto">
+          <div class="tabs__list" role="tablist">
+            <button class="tabs__tab" role="tab" id="tab-desc" aria-controls="panel-desc" aria-selected="true" type="button">Descripción</button>
+            <button class="tabs__tab" role="tab" id="tab-img" aria-controls="panel-img" aria-selected="false" tabindex="-1" type="button">Imágenes</button>
+            <button class="tabs__tab" role="tab" id="tab-val" aria-controls="panel-val" aria-selected="false" tabindex="-1" type="button">Valoraciones</button>
+            <button class="tabs__tab" role="tab" id="tab-prop" aria-controls="panel-prop" aria-selected="false" tabindex="-1" type="button">Propuestas</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-desc" aria-labelledby="tab-desc">
+            <h2>Descripción del proyecto</h2>
+            <p>Este proyecto consistió en el desarrollo de una identidad de marca completa para una cafetería artesanal llamada BRUMA. Se trabajó en el diseño del logotipo, paleta de colores, tipografía, papelería, packaging y piezas para redes sociales, con el objetivo de transmitir una experiencia cálida, natural y auténtica.</p>
+            <h3 style="margin-top: var(--space-3)">Entregables incluidos</h3>
+            <ul class="checklist">
+              <li>Logotipo principal y versiones</li>
+              <li>Paleta de colores y tipografía</li>
+              <li>Papelería (tarjetas, bolsas, vasos)</li>
+              <li>Mockups para redes sociales</li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-img" aria-labelledby="tab-img" hidden>
+            <h2>Imágenes</h2>
+            <p>Usa las miniaturas de la galería superior para ver cada pieza del proyecto.</p>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-val" aria-labelledby="tab-val" hidden>
+            <h2>Valoraciones</h2>
+            <div class="review"><strong>Café Raíz <span class="rating">5.0</span></strong><p>Entrega puntual y una identidad que nuestros clientes reconocen al instante.</p></div>
+            <div class="review"><strong>Tostaduría Andina <span class="rating">4.9</span></strong><p>Muy buena comunicación y propuestas claras en cada revisión.</p></div>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-prop" aria-labelledby="tab-prop" hidden>
+            <h2>Propuestas recibidas</h2>
+            <p>12 profesionales han enviado su propuesta para este proyecto.</p>
+          </div>
+        </section>
+      </article>
+
+      <!-- Columna lateral -->
+      <aside class="aside" aria-label="Detalles y contacto">
+        <section class="panel" aria-labelledby="det-title">
+          <h2 class="panel__title" id="det-title">DETALLES DEL PROYECTO</h2>
+          <dl class="facts">
+            <div><dt>Categoría</dt><dd>Diseño Gráfico</dd></div>
+            <div><dt>Presupuesto</dt><dd>S/ 600 – S/ 800</dd></div>
+            <div><dt>Tiempo de entrega</dt><dd>7 días hábiles</dd></div>
+            <div><dt>Propuestas recibidas</dt><dd>12 propuestas</dd></div>
+          </dl>
+          <div class="panel__actions">
+            <a class="btn btn--primary btn--block" href="#">Contactar</a>
+            <button class="btn btn--outline btn--block" type="button" id="save-btn" aria-pressed="false">Guardar proyecto</button>
+          </div>
+        </section>
+
+        <section class="panel" aria-label="Autora del proyecto">
+          <div class="author">
+            <img src="https://picsum.photos/seed/avatar-valentina/120/120" alt="Valentina Rojas">
+            <div>
+              <p class="author__name">Valentina Rojas</p>
+              <p class="author__role">Diseñadora gráfica</p>
+              <p class="rating">4.95 (250)</p>
+            </div>
+          </div>
+          <button class="btn btn--ghost btn--block" type="button" style="margin-top: var(--space-1)">Compartir</button>
+        </section>
+
+        <section class="panel interest" aria-labelledby="int-title">
+          <h2 class="panel__title" id="int-title">¿Te interesa este proyecto?</h2>
+          <p>Puedes enviar tu propuesta y mostrar cómo puedes hacerlo realidad.</p>
+          <div class="panel__actions">
+            <a class="btn btn--dark btn--block" href="#">Enviar propuesta</a>
+            <a class="btn btn--outline btn--block" href="#">Preguntar algo</a>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="sim-title">
+          <h2 class="panel__title" id="sim-title">PROYECTOS SIMILARES</h2>
+          <ul class="similar">
+            <li><a class="similar__item" href="proyecto.html"><img src="https://picsum.photos/seed/sim1/160/120" alt=""><span><span class="similar__title">Diseño de feed para redes sociales</span><br><span class="similar__meta">Marketing Digital · 👁 37 892</span></span></a></li>
+            <li><a class="similar__item" href="proyecto.html"><img src="https://picsum.photos/seed/sim2/160/120" alt=""><span><span class="similar__title">Banner promocional para productora</span><br><span class="similar__meta">Edición · 👁 21 302</span></span></a></li>
+            <li><a class="similar__item" href="proyecto.html"><img src="https://picsum.photos/seed/sim3/160/120" alt=""><span><span class="similar__title">Diseño web para tienda online</span><br><span class="similar__meta">Diseño Gráfico · 👁 21 574</span></span></a></li>
+          </ul>
+          <a class="btn btn--outline btn--block" href="proyectos.html" style="margin-top: var(--space-2)">Ver más</a>
+        </section>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__claim">Donde las ideas encuentran a las personas capaces de hacerlo realidad.</p>
+      <div class="footer__actions">
+        <a class="btn btn--primary" href="servicios.html">Explorar talento</a>
+        <a class="btn btn--light" href="#">Crear mi perfil</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 MAKERS. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
